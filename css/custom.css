@@ -1,0 +1,1360 @@
+
+
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	-webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing: border-box;
+    
+    
+}
+body {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+	font-family: 'Gotham Rounded A', 'Varela Round', 'sans-serif';
+	line-height: 1.6;
+	color: #3a3a3a;
+	margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p {
+	font-size: .95em;
+}
+h2,
+h3,
+a {
+	color: #093a58;
+}
+h1,
+h2,
+h3 {
+	margin-top: 0;
+}
+a {
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+}
+
+#barney {
+    max-height: 480px;
+    max-width: 900px;
+}
+
+.btn {
+    
+    color: #1D5568;
+    text-transform: uppercase; 
+}
+
+.registerbtn {
+    color: white;
+    margin-left: 40%
+    
+}
+
+.btn:hover {
+    background-color: white;
+}
+
+a:link, a:visited {
+    font-weight: bold;
+    cursor: auto;
+}
+
+a[href$=".pdf"] {
+    background: transparent url(/img/pdficon_small.png) no-repeat;
+    padding-left: 20px;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.35em;
+	margin: 0;
+}
+
+.logo {
+	width: 200px;
+    margin-left: auto;
+}
+.main-nav {
+	margin-top: 5px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-family: "arial black" ;
+}
+.name a,
+.main-nav a {
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
+}
+
+.main-nav a {
+	font-size: .95em;
+/*	color: #1D5568;*/
+	text-transform: uppercase;
+    transition-duration: .4s;
+    transition-property: color;
+}
+.main-nav a:hover {
+/*	color: #093a58; */
+    font-weight: bold;
+    
+}
+
+.name {
+    
+    text-align: center;
+}
+
+.dropdownMain {
+    
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown:after {
+    content: "\25BC";
+    font-size: .2em;
+    color: #1D5568;
+    display: block;
+    position: absolute;
+/*    top: 38%;*/
+    right: 12%;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+
+
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+    z-index: 1;
+    text-align: left;
+    opacity: .85;
+    color: #093a58;
+    font-weight: bold;
+    font-size: 9px;
+    white-space: nowrap;
+}
+
+.dropdown-content li {
+    border-bottom: 1px solid rgba(100,100,100, .2);
+    
+}
+
+.dropdownMain:hover .dropdown-content {
+    display: block;
+}
+
+
+/* ---- Layout Containers ---- */
+
+.topHeader {
+    
+    background-color: #093a58;
+    width: 100%;
+    height: 150px;
+    padding-left: 35px;
+    padding-top: 50px;
+    color: white; 
+    white-space: nowrap;
+    
+    
+}
+
+.topHeader h1{
+    margin: 0;
+    font-size: 40px;
+}
+
+.topHeader p {
+    color: grey
+}
+
+.main-header {
+	padding-top: .35em;
+	padding-bottom: .35em;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    
+}
+.mission_statement,
+.main-footer {
+	text-align: center;
+}
+.mission_statement {
+	color: #fff;
+	background: #1D5568;
+	padding: 2em 2em;
+	margin-bottom: ;
+    display: block;
+    
+}
+
+.mission_headline {
+	margin-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.mission_tagline {
+		font-size: 1.2em;
+        font-family: "sans-serif";
+        margin-left: 10px;
+        display: block;
+        
+	}
+.col {
+	padding-right: 3em;
+	padding-left: 3em;
+}
+
+.row {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    width: 100%;
+    -webkit-flex: 1;
+    -ms-flex: 1 auto;
+    flex: 1;
+    margin-top: 10px;
+    padding-top: 30px;
+}
+
+/* ---- Footer ---- */
+
+.main-footer {
+	background: #fff;
+/*	padding: 2em 0;*/
+    padding-bottom: 2em;
+    padding-top: 2em;
+	margin-top:;
+    margin-left: ;
+    margin-right: ;
+    border-top: solid #1D5568;
+    width: 100%;
+}
+
+.media_footer {
+	background: #fff;
+	padding: .5em 2em;
+	margin-bottom: 30px;
+    
+}
+
+.media_footer ul li {
+    display: inline-block;
+    max-height: 40px;
+    max-width: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+
+.nav_footer {
+    font-size: .7em;
+    
+}
+
+.nav_footer ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.nav_footer ul li {
+    margin: 5px 5px;
+    padding-left
+}
+
+.nav_footer ul li {
+/*    display: inline;*/
+}
+
+
+
+.footer-inner {
+    text-align: center;
+    color: #1D5568;
+}
+
+/* ---- Page Elements ---- */
+
+
+
+.feat-img {
+	border-radius: 5px;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
+.carousel-inner > .carousel-item > img {
+    margin: 0 auto;
+    width: 100%
+}
+
+/*
+.carousel-inner > .item > img {
+    width: 1200px;
+    height: 480px;
+    
+}
+*/
+
+.carousel-inner > .item > a > img {
+    width: 100%;
+}
+
+.carousel-inner {
+    
+    align-content: center;
+    text-align: center;
+    
+}
+
+.carousel-item img {
+    
+    width: 1200px;
+    height: 480px;
+    
+}
+
+.carousel .item {
+    width: 100%;
+    height: auto;
+}
+
+.carousel {
+    
+    overflow: auto;
+}
+
+#main_carousel {
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.carouselCaptionTitle {
+    color: white;
+}
+
+.carousel-indicators li {
+    background-color: #093a58;
+}
+
+
+.events {
+    
+    font-family: cursive;
+}
+
+.event_time_date {
+    font-family: fantasy;
+    opacity: .5;
+        
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+    display: block !important;
+}
+
+#oregon {
+    
+}
+
+#duck {
+    color: yellow;
+    font-size: 40px;
+}
+
+.secondary {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    margin: 0 10px 10px 0;
+    
+}
+
+#twitter_title {
+    margin-top: 30px;
+    margin-bottom: 30px
+}
+
+.twitter-timeline {
+    
+}
+
+.iframe #twitter-widget-0 {
+    height: 1000px;
+}
+
+button {
+    text-align: left;
+    margin-right: auto; 
+}
+
+
+
+
+/* ================================= 
+  Upcoming Events/Jobs
+==================================== */
+
+.events {
+    font-family: sans-serif;
+    
+}
+
+
+/* ================================= 
+  Committees.html
+==================================== */
+
+.topHeaderCommittee {
+    background-color: #093a58;
+    width: 100%;
+    height: 150px;
+    padding-left: 35px;
+    padding-top: 50px;
+    color: white; 
+}
+
+#speakers {
+    
+    color: #1D5568;
+}
+
+#yp_mission {
+    
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #1D5568;
+}
+
+
+.iconCenter {
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    
+}
+
+.committeeIcon {
+    display: inline-block;
+    float: left;
+    margin: 2px; 
+    padding: ;
+    width: 25px;
+    height: 24px;
+    text-align: center;
+    color: green;
+    background-color: lightgrey;
+    white-space: nowrap;
+    transition: .8s;
+    
+}
+
+.committeeIcon:hover {
+    background-color: white;
+   
+}
+
+.card-text {
+    width: 100%;
+    margin-top: -1px;
+    margin-bottom: -1px;
+}
+
+.committeeTitle {
+    color: lightgray;
+}
+
+
+
+
+/* ================================= 
+  bylaws.html
+==================================== */
+.bylaw-main {
+    padding: 2em 2em;
+	margin-bottom: 24px;
+    display: block;
+}
+
+.bylaw-content {
+    margin-left: 20px;
+}
+
+.bylaw-content h6 {
+    margin-left: 20px;
+}
+
+.bylaw-content p {
+    margin: 0;
+    padding: 0;
+    margin-left: 40px;
+}
+.bylaw-content .indented {
+    padding-left: 20px;
+}
+
+.topHeaderBylaw {
+    
+    background-color: #093a58;
+    width: 100%;
+    height: 150px;
+    padding-left: 35px;
+    padding-top: 50px;
+    color: white; 
+}
+
+hr {
+    margin-top: -10px;
+}
+
+
+/* ================================= 
+  newsone
+==================================== */
+
+#newsHR {
+    margin-top: 10px;
+}
+
+.newsone-story {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    align-content: center;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);  
+}
+
+.newsone-story h1 {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 29px;
+}
+
+.newsone-story p {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.1em;
+    
+}
+
+.newsone-story .indented {
+    padding-left: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.newsTag{
+    color: white;
+    transition: .5s;
+    transform: scale(1.2);
+}
+
+.newsTag:hover {
+    color: whitesmoke;
+    font-weight: bold;
+    text-decoration: none;  
+}
+
+.newsTag h3:hover {
+    color: whitesmoke;
+}
+
+.topHeaderNewsOne {
+    background-color: #093a58;
+    width: 100%;
+    height: 150px;
+/*
+    display: flex;
+    align-items: center;
+    justify-content: center;
+*/
+    padding-left: 15px;
+    padding-top: 60px;
+    color: white; 
+}
+
+
+/* ================================= 
+  positionStatments.html
+==================================== */
+.topHeaderPosition{
+background-color: #093a58;
+    width: 100%;
+    height: 150px;
+    padding-left: 30px;
+    padding-top: 60px;
+    color: white; 
+}
+
+
+/* ================================= 
+  honors.html
+==================================== */
+
+
+.topHeaderHonors {
+    background-color: #093a58;
+    width: 100%;
+    height: 150px;
+    padding-left: 15px;
+    padding-top: 60px;
+    color: white; 
+    
+}
+
+.honors {
+    margin: 50px 10px;
+/*    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19); */
+    padding: 20px 20px;
+}
+
+.honors-inner {
+    padding-left: 20px;
+}
+
+/* ================================= 
+  atAwareness.html
+==================================== */
+.topHeaderAwareness {
+    
+    background-color: #093a58;
+    width: 100%;
+    height: 150px;
+    padding-left: 30px;
+    padding-top: 60px;
+    color: white; 
+} 
+
+.topHeaderAwareness h1 {
+    font-size: 30px
+}
+
+.awareness-story {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    align-content: center;
+/*    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);  */
+}
+
+.awareness-story h1 {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.awareness-story p {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.1em;
+    
+}
+
+.awareness-story .indented {
+    padding-left: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* ================================= 
+  resources.html
+==================================== */
+   .topHeaderResources {
+    background-color: #093a58;
+    width: 100%;
+    height: 150px;
+    padding-left: 90px;
+    padding-top: 60px;
+    color: white; 
+    
+}
+    
+    .construction {
+        margin-top: 50px;
+        padding: 80px;
+        padding-left: 120px;
+    }
+    
+        #comingSoon {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 40px;
+    }
+
+
+/* ================================= 
+  About.html
+==================================== */
+
+.about_content {
+    margin: 15px;    
+    align-content: center;
+/*  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);  */
+}
+
+
+/* ================================= 
+  jobPostingPolicy.html
+==================================== */
+    
+.topHeaderJobPosting {
+    background-color: #093a58;
+    width: 100%;
+    height: 150px;
+    padding-left: 20px;
+    padding-top: 60px;
+    color: white; 
+}
+
+.jobPostingContent {
+    margin: 20px;
+}
+
+.jobImage {
+    overflow: hidden;
+}
+
+.rss_widget {
+    height: 300px;
+}
+
+/* ================================= 
+  eventRegistration.html
+==================================== */
+
+.summitDescription {
+    font-size: 20px;
+}
+
+
+/* ================================= 
+  eventRegistration.html
+==================================== */
+
+.postponed {
+    color: red;
+    font-size: 30px;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+    
+    .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+	.main-header,
+	.row,
+  .footer-inner{
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+
+  .main-header,
+	.main-nav,
+    .row {
+		display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+	}
+	.main-header {
+        -ms-flex-direction: column;
+		flex-direction: column;
+		align-items: center;
+	}
+    .main-nav {
+        -ms-flex-direction: row;
+        flex-direction: row;
+        
+    }
+    
+    .col {
+        -ms-flex: 1 50%;
+        flex: 1 50%;
+    }
+    
+    .row {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }  
+    
+    .topHeader {
+    
+    background-color: #093a58;
+    width: 100%;
+    height: 150px;
+/*
+    display: flex;
+    align-items: center;
+    justify-content: center;
+*/
+    padding-left: 40px;
+    padding-top: 50px;
+    color: white; 
+}
+    
+    .topHeaderAwareness {
+    
+    background-color: #093a58;
+    width: 100%;
+    height: 150px;
+/*
+    display: flex;
+    align-items: center;
+    justify-content: center;
+*/
+    padding-left: 120px;
+    padding-top: 40px;
+    color: white; 
+}
+    
+    #social_media_icons {
+        transition: transform .5s;
+    }
+    
+    #social_media_icons:hover {
+        transform: scale(1.1);
+    }
+    
+    .bylaws-header {
+    padding-left: 130px;
+}
+    .bylaw-content {
+        margin-left: 130px;
+    }
+    
+    .newsone-story {
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 10px;
+    align-content: center;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);  
+}
+    
+    .newsone-story h1 {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+    .newsone-story p {
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 1.1em;
+    
+}
+    
+    .capitalHillAttendees { 
+    float: left;
+    margin: 0 20px 0 0;
+    max-width: 300px
+}
+    
+    .dropdownMain {
+    
+    position: relative;
+    display: inline-block;
+}
+    
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+/*    min-width: 160px;*/
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+/*    padding: 12px 16px;*/
+    z-index: 1;
+    text-align: left;
+    opacity: .85;
+    color: #093a58;
+    font-weight: bold;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+   
+/* ================================= 
+  News One Media Query 768px
+==================================== */
+    
+    .topHeaderNewsOne {
+    background-color: #093a58;
+    width: 100%;
+    height: 150px;
+/*
+    display: flex;
+    align-items: center;
+    justify-content: center;
+*/
+    padding-left: 100px;
+    padding-top: 60px;
+    color: white; 
+}
+    
+/* ================================= 
+  honors Media Query 768px
+==================================== */
+    
+    .honors {
+    margin: 50px 180px;
+/*    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19); */
+    padding: 20px 20px;
+}
+
+.honors-inner {
+    padding-left: 20px;
+}
+    
+    .topHeaderHonors {
+    background-color: #093a58;
+    width: 100%;
+    height: 150px;
+    padding-left: 180px;
+    padding-top: 60px;
+    color: white; 
+    
+}
+    
+/* ================================= 
+  Awareness Media Query 768px
+==================================== */
+    .awareness-story {
+    margin-right: 180px;
+    margin-left: 180px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    align-content: center;
+/*    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);  */
+}
+    
+    .topHeaderAwareness {
+    
+    background-color: #093a58;
+    width: 100%;
+    height: 150px;
+    padding-left: 180px;
+    padding-top: 60px;
+    color: white; 
+} 
+    
+    .topHeaderAwareness h1 {
+        font-size: 40px
+    }
+    
+/* ================================= 
+  Committee Media Query 768px
+==================================== */
+    
+    .topHeaderCommittee {
+    
+    background-color: #093a58;
+    width: 100%;
+    height: 150px;
+    padding-left: 100px;
+    padding-top: 60px;
+    color: white; 
+} 
+    
+    
+    
+/* ================================= 
+  Bylaw Media Queries
+==================================== */
+    .topHeaderBylaw {
+    
+    background-color: #093a58;
+    width: 100%;
+    height: 150px;
+    padding-left: 165px;
+    padding-top: 40px;
+    color: white; 
+}
+    
+    
+/* ================================= 
+  resources Media Query
+==================================== */
+    
+    .topHeaderResources {
+    background-color: #093a58;
+    width: 100%;
+    height: 150px;
+    padding-left: 90px;
+    padding-top: 60px;
+    color: white; 
+    
+}
+    
+    .construction {
+        margin-top: 50px;
+        padding: 80px;
+        padding-left: 120px;
+    }
+    
+        #comingSoon {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 60px;
+    }
+    
+/* ================================= 
+  About.html
+==================================== */
+
+.about_content {
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    align-content: center;
+/*  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);  */
+}
+    
+/* ================================= 
+  positionStatements Media Query 768px
+==================================== */
+    
+    .topHeaderPosition {
+    background-color: #093a58;
+    width: 100%;
+    height: 150px;
+    padding-left: 120px;
+    padding-top: 60px;
+    color: white; 
+}
+    
+/* ================================= 
+  jobPostingPolicy Media Query 768px
+==================================== */
+    
+
+.topHeaderJobPosting {
+    background-color: #093a58;
+    width: 100%;
+    height: 150px;
+/*
+    display: flex;
+    align-items: center;
+    justify-content: center;
+*/
+    padding-left: 100px;
+    padding-top: 50px;
+    color: white;
+    }   
+    
+.jobPostingContent {
+    margin: 10px 100px;
+}
+    
+    
+}
+
+@media (min-width: 1025px) {
+    
+    .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+	.main-header {
+        -ms-flex-direction: row;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+    .topHeader {
+    
+    background-color: #093a58;
+    width: 100%;
+    height: 150px;
+/*
+    display: flex;
+    align-items: center;
+    justify-content: center;
+*/
+    padding-left: 100px;
+    padding-top: 50px;
+    color: white; 
+}
+
+    .topHeader h1{
+    margin: 0;
+    font-size: 40px;
+    }
+    
+    .topHeaderAwareness {
+    
+    background-color: #093a58;
+    width: 100%;
+    height: 150px;
+/*
+    display: flex;
+    align-items: center;
+    justify-content: center;
+*/
+    padding-left: 120px;
+    padding-top: 40px;
+    color: white; 
+}
+    
+    .bylaws-header {
+    padding-left: 140px;
+}
+    .bylaw-content {
+        margin-left: 140px;
+        margin-right: 200px
+    }
+    
+    .mission_statement {
+        text-align: left;
+        padding: 70px 120px 70px 120px;
+    }
+    
+    .headline {
+        padding-bottom: 30px
+    }
+	.tagline {
+		font-size: 15px;
+	}
+    
+    .col {
+        -ms-flex-basis: 0;
+        flex-basis: 0;
+    }
+    .primary {
+        -ms-flex-grow: 1.4;
+        flex-grow: 1.4;
+    }
+    
+    .main-nav {
+        margin-top: 5px;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        
+    }
+    
+    #social_media_icons {
+        transition: transform .5s;
+    }
+    
+    #social_media_icons:hover {
+        transform: scale(1.1);
+    }
+    
+    .newsone-story {
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    align-content: center;
+        
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);  
+}
+    .newsone-story h1 {
+    margin-left: 180px;
+    margin-right: 180px;
+}
+
+    .newsone-story p {
+    margin-left: 180px;
+    margin-right: 180px;
+    font-size: 1.1em;
+    
+}
+    
+    .capitalHillAttendees { 
+    float: left;
+    margin: 0 20px 0 0;
+    max-width: 300px
+}
+    
+    /* ================================= 
+  Awareness Media Query 1025px
+==================================== */
+    
+    .topHeaderAwareness {
+    
+    background-color: #093a58;
+    width: 100%;
+    height: 150px;
+    padding-left: 180px;
+    padding-top: 60px;
+    color: white; 
+} 
+    
+    .dropdownMain {
+    
+    position: relative;
+    display: inline-block;
+}
+    
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+/*    min-width: 160px;*/
+/*    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+/*    padding: 12px 16px;*/
+    z-index: 1;
+    text-align: left;
+    opacity: .85;
+    color: #093a58;
+    font-weight: bold;
+    font-size: 12px;
+    white-space: nowrap;
+}
+    
+    /* ================================= 
+  Committee Media Query 1025px
+==================================== */
+    
+    .topHeaderCommittee {
+    
+    background-color: #093a58;
+    width: 100%;
+    height: 150px;
+    padding-left: 125px;
+    padding-top: 60px;
+    color: white; 
+} 
+    
+    .iconCenter {
+    display: inline-block;
+    text-align: ;
+/*    margin-left: 18%;*/
+    white-space: nowrap;
+    
+}
+    
+/* ================================= 
+  Resources Media Query
+==================================== */
+    .topHeaderResources {
+    background-color: #093a58;
+    width: 100%;
+    height: 150px;
+    padding-left: 90px;
+    padding-top: 60px;
+    color: white; 
+    
+}
+    
+    #comingSoon {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 60px;
+    }
+    
+    .construction {
+/*
+        margin-top: 100px;
+        padding: 80px;
+        padding-left: 300px;
+*/
+        
+        text-align: center;
+    }
+    
+/* ================================= 
+  About.html
+==================================== */
+
+.about_content {
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    align-content: center;
+/*  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);  */
+}
+    
+/* =================================
+    HS Summit
+   ===============================*/
+    
+    .hsSummitNews {
+        margin-left: 3%;
+    }
+    .hs-summit {
+        margin-left: 11%;
+    }
+    .
+    
+    
+}
+
+
+
+
+.card-img-top {
+    width: 100%;
+}
